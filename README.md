@@ -35,7 +35,7 @@ Note that the total of the points from the seven problems is 65, but the assignm
 ## Problem 2
 (10 points) Use the map method of the Array class to write a function that accepts an array of integers and produces a corresponding array of printed representations in English words. If the number falls outside of the range [0...99], compute nil instead. This is a great opportunity to practice with the Dictionary type to keep your code compact.  
 
-Do not consult reference materials for generating this algorithm and don’t use built-in conversion functions that do this for you (specifically NumberFormatter). Part of the essence of this problem is to compose the underlying logical idea and express it in the Swift primitive operations. Try to make it efficient; if you have 99 separate cases that’s missing the intent. If you need help coming up with this algorithm discuss it on Canvas.
+Do not consult reference materials for generating this algorithm and don’t use built-in conversion functions that do this for you (specifically NumberFormatter). Part of the essence of this problem is to compose the underlying logical idea and express it in the Swift primitive operations. Try to make it efficient; if you have 99 separate cases that’s missing the intent. If you need help coming up with this algorithm discuss it on Blackboard.
 
 Example call: englishWordsOfValues([7, 2, -13, 300, 6, 26])
 *Problem 2*
@@ -65,7 +65,7 @@ Your bill including tax comes to $4.92.
 ## Problem 4
 (10 points) Write a function that uses the filter method of the Array class to produce a new array of exactly the primes contained in an input array.
 
-Do not consult reference materials for generating this algorithm. Part of the essence of this problem is to compose the underlying mathematical idea and express it in the Swift primitive operations. If you need help coming up with this algorithm discuss it on Canvas.
+Do not consult reference materials for generating this algorithm. Part of the essence of this problem is to compose the underlying mathematical idea and express it in the Swift primitive operations. If you need help coming up with this algorithm discuss it on Blackboard.
 
 The underlying idea is simple: generate-and-test. Generate a “naive” list of all possible factors of a number. Looking over each candidate in turn, find out if it divides the number evenly. If so, the number has (at least!) that candidate as a factor, so it is not prime, and you can stop testing.
 
@@ -73,14 +73,14 @@ Prime numbers, by definition, are greater than 1. Ignore negative inputs: you ca
 
 You must write a helper function to determine if a given integer is prime. The helper function must be an extension of the Int class. For example, 3.isPrime() should evaluate to true while 4.isPrime() returns false.
 
-Example call:
+Example call:\
 primesOf(values: [3, 1, -3, 27, 29, 3, 7, 2, 7, 83, 91])
 
-Computed Result:
+Computed Result:\
 [3, 29, 3, 7, 2, 7, 83]
 
-Formatted Output:
-*Problem 4*
+Formatted Output:\
+*Problem 4*\
 The following values are positive prime: [3, 29, 3, 7, 2, 7, 83]
 
 ## Problem 5
@@ -91,8 +91,8 @@ totalCostWithTipOf(items: ["Ham": 345, "Cheese": 115], serviceLevel: ServiceLeve
 
 Return value: 561
 
-Correctly formatted output:
-*Problem 5*
+Correctly formatted output:\
+*Problem 5*\
 Your bill including tax and tip comes to $5.61.
 	    
 (Self-check: why is ServiceLevel.Good unnecessarily verbose in the above context?)
