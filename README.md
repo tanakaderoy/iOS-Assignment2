@@ -137,11 +137,10 @@ myBill.addItem("Ham", quantity: 1, price: 345)\
 myBill.addItem("Cheese", quantity: 1, price: 115)\
 myBill.addItem("Ham", quantity: 2, price: 0) // price already known, this time it's ignored\
 	    \
-myBill.description\ 
-would evaluate to:\
+myBill.description would evaluate to:\
 Ham (3 @$3.45): $10.35\
 Cheese (1 @1.15): $1.15\
-Base Total: $11.50\
+Base Total: $11.50
 	    
 For the program output, use the description above, as well as clearly labeled values for serviceLevel and finalTotal, to inform the user of the entire bill for each test case. For serviceLevel, show the value in percent and dollar amount. Have at least 6 test cases, where you probe edge conditions, such as an empty bill, or unreasonable values (-3 salads, 0 hamburgers at $4.99 each, a pickle that costs -0.25)
 
