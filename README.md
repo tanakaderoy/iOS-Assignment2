@@ -1,6 +1,6 @@
 # Assignment2
-Assigned 1/15/2019
-Due 1/29/2014
+Assigned 1/15/2019\
+Due 1/29/2014\
 Points: 75
 
 ## Purpose
