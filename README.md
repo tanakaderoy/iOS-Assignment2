@@ -37,13 +37,13 @@ Note that the total of the points from the seven problems is 65, but the assignm
 
 Do not consult reference materials for generating this algorithm and don’t use built-in conversion functions that do this for you (specifically NumberFormatter). Part of the essence of this problem is to compose the underlying logical idea and express it in the Swift primitive operations. Try to make it efficient; if you have 99 separate cases that’s missing the intent. If you need help coming up with this algorithm discuss it on Blackboard.
 
-Example call: englishWordsOfValues([7, 2, -13, 300, 6, 26])
-*Problem 2*
-7: seven
-2: two
--13: no answer
-300: no answer
-6: six
+Example call: englishWordsOfValues([7, 2, -13, 300, 6, 26])\
+*Problem 2*\
+7: seven\
+2: two\
+-13: no answer\
+300: no answer\
+6: six\
 26: twenty-six
 
 ## Problem 3
@@ -58,8 +58,8 @@ totalCostOf(items: ["Ham": 345, "Cheese": 115])
 
 Computed result: 492
 
-Correctly formatted output:
-*Problem 3*
+Correctly formatted output:\
+*Problem 3*\
 Your bill including tax comes to $4.92.
 
 ## Problem 4
