@@ -51,6 +51,6 @@ func englishWordsOfValues(_ numbers: [Int]) {
     
 }
 /*englishWordsOfValues(fiveList)
-englishWordsOfValues(makeList(10))
-*/
+ englishWordsOfValues(makeList(10))
+ */
 englishWordsOfValues([20,21,22,23])
