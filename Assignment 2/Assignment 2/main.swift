@@ -5,6 +5,7 @@
 //  Created by tanaka on 1/15/19.
 //  Copyright © 2019 tanaka. All rights reserved.
 //
+<<<<<<< HEAD
 /*
  ## Problem 1
  (5 points) Write a range-style for loop that walks through an array of integers, printing out only those above (not including) 50. (The range is used to generate all valid array indices.) Then implement the same functionality using a while loop with an explicit variable declaration and increment step. Then implement the same using true array iteration with for...in. Declare a few hard-coded arrays to test your function. Recall the test case requirements: as test inputs, use an empty array, a single-length array, an array that will generate no output, an array that generates one value only on output, an array where all numbers pass, as well as typical inputs where only some numbers pass. You should be getting the idea here: always test the extremes as well as ordinary cases.
@@ -127,6 +128,8 @@
 //  Created by tanaka on 1/15/19.
 //  Copyright © 2019 tanaka. All rights reserved.
 //
+=======
+>>>>>>> 74502dbf653fe5cb705111a84f688b42053a7801
 import Foundation
 
 /*
@@ -158,6 +161,7 @@ func englishWordsOfValues(_ numbers: [Int]) {
     let tens = [0: " ",10: "ten", 20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty", 60: "sixty",70: "seventy", 80: "eighty", 90: "ninety"]
     var index = 0
     
+<<<<<<< HEAD
     while index < numbers.count {
         if (numbers[index] >= 100 || numbers.isEmpty ){
             print("\(numbers[index]): not valid")
@@ -165,6 +169,15 @@ func englishWordsOfValues(_ numbers: [Int]) {
         for word in textNum{
             
             
+=======
+            while index < numbers.count {
+            if (numbers[index] >= 100 || numbers.isEmpty ){
+                print("\(numbers[index]): not valid")
+            }
+            for word in textNum{
+            
+            
+>>>>>>> 74502dbf653fe5cb705111a84f688b42053a7801
             let onesDigit = numbers[index] % 10
             if( onesDigit == word.key){
                 let tensDigit = numbers[index] - onesDigit
@@ -193,6 +206,7 @@ func englishWordsOfValues(_ numbers: [Int]) {
                             print("\(numbers[index]) in english is \(digit.value)")
                         case 90:
                             print("\(numbers[index]) in english is \(digit.value)")
+<<<<<<< HEAD
                         case 11:
                             print("\(numbers[index]) in english is eleven")
                         case 12:
@@ -202,6 +216,17 @@ func englishWordsOfValues(_ numbers: [Int]) {
                         case 14:
                             print("\(numbers[index]) in english is fourteen")
                         case 15:
+=======
+                            case 11:
+                            print("\(numbers[index]) in english is eleven")
+                            case 12:
+                            print("\(numbers[index]) in english is twelve")
+                            case 13:
+                            print("\(numbers[index]) in english is thirteen")
+                            case 14:
+                            print("\(numbers[index]) in english is fourteen")
+                            case 15:
+>>>>>>> 74502dbf653fe5cb705111a84f688b42053a7801
                             print("\(numbers[index]) in english is fifteen")
                         case 16..<20:
                             print("\(numbers[index]) in english is \(word.value)teen")
@@ -241,4 +266,8 @@ func englishWordsOfValues(_ numbers: [Int]) {
 /*englishWordsOfValues(fiveList)
  englishWordsOfValues(makeList(10))
  */
+<<<<<<< HEAD
 englishWordsOfValues([1,2,33,99,10,-1,100,19,90])
+=======
+englishWordsOfValues([1,2,33,99,10,19,90])
+>>>>>>> 74502dbf653fe5cb705111a84f688b42053a7801
