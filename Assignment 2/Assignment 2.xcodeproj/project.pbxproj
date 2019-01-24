@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBB22FE21FA3F3700B50E3D /* problem 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB22FD21FA3F3700B50E3D /* problem 4.swift */; };
 		879B6DA921F7A20F00D2A272 /* problem 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879B6DA821F7A20F00D2A272 /* problem 2.swift */; };
 		87E5AF7421F0344C005A0F85 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5AF7321F0344C005A0F85 /* main.swift */; };
 		87E7517321FA37CB0006BB10 /* problem 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7517221FA37CB0006BB10 /* problem 1.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3FBB22FD21FA3F3700B50E3D /* problem 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem 4.swift"; sourceTree = "<group>"; };
 		879B6DA821F7A20F00D2A272 /* problem 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem 2.swift"; sourceTree = "<group>"; };
 		87E5AF7021F0344C005A0F85 /* Assignment 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E5AF7321F0344C005A0F85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				87E7517221FA37CB0006BB10 /* problem 1.swift */,
 				879B6DA821F7A20F00D2A272 /* problem 2.swift */,
 				87E7517421FA384E0006BB10 /* problem 3.swift */,
+				3FBB22FD21FA3F3700B50E3D /* problem 4.swift */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			files = (
 				87E7517321FA37CB0006BB10 /* problem 1.swift in Sources */,
 				87E5AF7421F0344C005A0F85 /* main.swift in Sources */,
+				3FBB22FE21FA3F3700B50E3D /* problem 4.swift in Sources */,
 				87E7517521FA384E0006BB10 /* problem 3.swift in Sources */,
 				879B6DA921F7A20F00D2A272 /* problem 2.swift in Sources */,
 			);
