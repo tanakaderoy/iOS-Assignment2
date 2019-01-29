@@ -27,22 +27,22 @@ import Foundation
  *Problem 4*\
  The following values are positive prime: [3, 29, 3, 7, 2, 7, 83]*/
 //stackoverflow
-func factorial(a: Int) -> Int {
-    if a == 0{
-        return 1
-    }else{
-        return a * factorial(a: a - 1)
-    }
-    
-}
+
 extension Int{
     var isPrime: Bool {
-
-    if ((factorial(a: self) % (self+1)/self)  == self) {
-        return true
+        if self <= 3{
+            return self > 1
+        } else if (self % 2 == 0 || self % 3 == 0){
+            return false
         }
-    return false
-    
+        var i = 5
+        while( i * i <= self){
+            if( self % i == 0 || self % (i + 2) == 0){
+                return false
+            }
+            i = i + 6
+        }
+        return true
 }
 }
 

@@ -138,9 +138,9 @@ print("***Problem 3***")
 print("Computed result: \(totalCostOf(foodDict: ["Ham": 345, "Cheese": 115]))")
 
 
-//print("Problem 4")
-//var digits = [3, 1, -3, 27, 29, 3, 7, 2, 7, 83, 91]
-//print(primesOf(digits))
+print("Problem 4")
+var digits = [3, 1, -3, 27, 29, 3, 7, 2, 7, 83, 91]
+print(primesOf(digits))
 
 print("Problem 5")
 print("Computed result: \(totalCostWithTipOf(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel:ServiceLevel.Good))")
@@ -148,11 +148,5 @@ print("Problem 6")
 print("Your bill summary: \(totalCostWithTipOf(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel:ServiceLevel.Good))")
 totalCostOf(foodDict: ["Ham": 345, "Cheese": 115])
 
-print("Problem 4")
 
-//let digits2 = [3,1,-3,27,20,3,7,2,7,83,91]
-//let prime = digits2.filter{(factorial(a: $0) % $0 + 1) == $0}
-//print(prime)
-//primesOf([3, 1, -3, 27, 29, 3, 7, 2, 7, 83, 91])
-//print(factorial2(a: 3))
-print(7.isPrime)
+
