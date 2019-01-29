@@ -14,15 +14,23 @@
  Problem 3
  Your bill including tax comes to $4.92.*/
 import Foundation
-func upload(foodDict: [String: Int]) -> Int {
-    var total = 0
+func totalCostOf(foodDict: [String: Int]) -> Int {
     
-    for price in foodDict{
-        
-        total = total + price.value
-        
-    }
+
+
+
+    var total = 0
+   
+   for price in foodDict{
+     
+     total = total + price.value
+     
+   }
     let totalBill = Double(total) + (Double(total) * 0.07)
-    print(round(totalBill))
-    return( Int(totalBill))
+    let amountString = String(format: "$%.02f", totalBill*0.01)
+   print("Your bill inclidng tax comes to \(amountString)")
+   return( Int(totalBill)) 
 }
+
+
+

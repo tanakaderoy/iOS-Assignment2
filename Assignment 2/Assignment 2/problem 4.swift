@@ -36,8 +36,8 @@ func factorial(a: Int) -> Int {
     
 }
 
-/*
+
 func primesOf(_ numbers: [Int]) -> [Int] {
-    let primes = numbers.filter{((factorial2(a: $0) % ($0+1)/$0)  == $0)}
+    let primes = numbers.filter{((factorialß(a: $0) % ($0+1)/$0)  == $0)}
     return primes
-}*/
+}
