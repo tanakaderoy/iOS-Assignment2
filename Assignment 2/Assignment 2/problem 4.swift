@@ -35,9 +35,19 @@ func factorial(a: Int) -> Int {
     }
     
 }
+extension Int{
+    var isPrime: Bool {
+
+    if ((factorial(a: self) % (self+1)/self)  == self) {
+        return true
+        }
+    return false
+    
+}
+}
 
 
 func primesOf(_ numbers: [Int]) -> [Int] {
-    let primes = numbers.filter{((factorialß(a: $0) % ($0+1)/$0)  == $0)}
+    let primes = numbers.filter{($0.isPrime)}
     return primes
 }

@@ -1,4 +1,4 @@
-
+/*
     
 struct retVal(baseCost: Double, tax: Double, tip: Double) {
     var baseCost = 0
@@ -49,3 +49,4 @@ case .Excellent:
 
 
 
+*/
