@@ -140,13 +140,13 @@ print("Computed result: \(totalCostOf(foodDict: ["Ham": 345, "Cheese": 115]))")
 
 print("Problem 4")
 var digits = [3, 1, -3, 27, 29, 3, 7, 2, 7, 83, 91]
-print(primesOf(digits))
+print("Primes are: \(primesOf(digits))")
 
 print("Problem 5")
 print("Computed result: \(totalCostWithTipOf(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel:ServiceLevel.Good))")
 print("Problem 6")
-print("Your bill summary: \(totalCostWithTipOf(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel:ServiceLevel.Good))")
-totalCostOf(foodDict: ["Ham": 345, "Cheese": 115])
+let p6 = totalCostP6(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel: .Excellent)
+print(p6.description)
 
 
 
