@@ -1,3 +1,16 @@
+ /*## Problem 2
+ (10 points) Use the map method of the Array class to write a function that accepts an array of integers and produces a corresponding array of printed representations in English words. If the number falls outside of the range [0...99], compute nil instead. This is a great opportunity to practice with the Dictionary type to keep your code compact.
+ 
+ Do not consult reference materials for generating this algorithm and don’t use built-in conversion functions that do this for you (specifically NumberFormatter). Part of the essence of this problem is to compose the underlying logical idea and express it in the Swift primitive operations. Try to make it efficient; if you have 99 separate cases that’s missing the intent. If you need help coming up with this algorithm discuss it on Blackboard.
+ 
+ Example call: englishWordsOfValues([7, 2, -13, 300, 6, 26])\
+ *Problem 2*\
+ 7: seven\
+ 2: two\
+ -13: no answer\
+ 300: no answer\
+ 6: six\
+ 26: twenty-six*/
 import Foundation
 func englishWordsOfValues(_ numbers: [Int]) {
     let textNum = [0: "zero",1: "one", 2: "two", 3: "three",4: "four",5: "five",6: "six",7: "seven",8: "eight",9: "nine"]
@@ -6,7 +19,7 @@ func englishWordsOfValues(_ numbers: [Int]) {
     
     while index < numbers.count {
         if (numbers[index] >= 100 || numbers.isEmpty ){
-            print("\(numbers[index]): not valid")
+            print("\(numbers[index]): not valid \n")
         }
         for word in textNum{
             

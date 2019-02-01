@@ -1,3 +1,17 @@
+/*## Problem 6
+(10 points) Building on Exercise 5, change the return value from Int to a custom struct (which you must declare beforehand) with 3 stored properties: base food cost, tax, and tip. Add a 4th, total, as a computed property of that struct. Again, assume meal tax of 7.0%. Also set up a description property, also computed, that outputs a printable breakdown and summary (all four values). Use it for the final output.
+
+Example call: totalCostWithTipOf(["Ham": 345, "Cheese": 115], serviceLevel: .Good)
+
+Return value: A struct containing: { baseCost: 460, tax: 32, tip: 83 } where retVal.total would evaluate to: 575, and retVal.description would evaluate to: base: $4.60 tax: $0.32 tip: $0.83 total: $5.75
+
+Correctly formatted output:
+*Problem 6*
+Your bill summary:
+base: $4.60
+tax: $0.32
+tip: $0.83
+total: $5.75*/
 import Foundation
 
 struct foodOrder {
