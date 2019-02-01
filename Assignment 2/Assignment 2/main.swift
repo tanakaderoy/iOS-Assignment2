@@ -147,6 +147,13 @@ print("Computed result: \(totalCostWithTipOf(foodDict: ["Ham": 345, "Cheese": 11
 print("Problem 6")
 let p6 = totalCostP6(foodDict: ["Ham": 345, "Cheese": 115], serviceLevel: .Excellent)
 print(p6.description)
+print("Problem 7")
+var myBill = RestaurantBill()
+myBill.addItem("Ham", quantity: 1, price: 345)
+myBill.addItem("Cheese", quantity: 1, price: 115)
+myBill.addItem("Ham", quantity: 2, price: 0)
+myBill.description()
+
 
 
 

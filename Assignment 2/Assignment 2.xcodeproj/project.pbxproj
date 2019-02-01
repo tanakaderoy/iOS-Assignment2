@@ -15,6 +15,7 @@
 		87E5AF7421F0344C005A0F85 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5AF7321F0344C005A0F85 /* main.swift */; };
 		87E7517321FA37CB0006BB10 /* problem 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7517221FA37CB0006BB10 /* problem 1.swift */; };
 		87E7517521FA384E0006BB10 /* problem 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7517421FA384E0006BB10 /* problem 3.swift */; };
+		DE11DE232203C5D40068A825 /* Problem 7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11DE222203C5D40068A825 /* Problem 7.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		87E5AF7321F0344C005A0F85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		87E7517221FA37CB0006BB10 /* problem 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem 1.swift"; sourceTree = "<group>"; };
 		87E7517421FA384E0006BB10 /* problem 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "problem 3.swift"; sourceTree = "<group>"; };
+		DE11DE222203C5D40068A825 /* Problem 7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Problem 7.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				3FFE72742200BEE70033749A /* Problem 5.swift */,
 				87E544AA22011BEF001986EF /* Util.swift */,
 				3FFE72762200C2C40033749A /* Problem 6.swift */,
+				DE11DE222203C5D40068A825 /* Problem 7.swift */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				3FBB22FE21FA3F3700B50E3D /* problem 4.swift in Sources */,
 				87E7517521FA384E0006BB10 /* problem 3.swift in Sources */,
 				879B6DA921F7A20F00D2A272 /* problem 2.swift in Sources */,
+				DE11DE232203C5D40068A825 /* Problem 7.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
