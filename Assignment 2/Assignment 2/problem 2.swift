@@ -12,82 +12,70 @@
  6: six\
  26: twenty-six*/
 import Foundation
-func englishWordsOfValues(_ numbers: [Int]) {
+func getEnglishRep(num: Int) -> String {
+
     let textNum = [0: "zero",1: "one", 2: "two", 3: "three",4: "four",5: "five",6: "six",7: "seven",8: "eight",9: "nine"]
-    let tens = [0: " ",10: "ten", 20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty", 60: "sixty",70: "seventy", 80: "eighty", 90: "ninety"]
+    let tens = [0: "",10: "ten", 20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty", 60: "sixty",70: "seventy", 80: "eighty", 90: "ninety"]
     var index = 0
-    
-    while index < numbers.count {
-        if (numbers[index] >= 100 || numbers.isEmpty ){
-            print("\(numbers[index]): not valid \n")
+    while index < num {
+        if (num >= 100 ){
+            print("\(num): not valid \n")
         }
         for word in textNum{
-            
-            
-            let onesDigit = numbers[index] % 10
+            let onesDigit = num % 10
             if( onesDigit == word.key){
-                let tensDigit = numbers[index] - onesDigit
+                let tensDigit = num - onesDigit
                 for digit in tens {
-                    
                     if (tensDigit == digit.key){
-                        
-                        
-                        switch numbers[index] {
-                        case 10 :
-                            print("\(numbers[index]) in english is \(digit.value)")
-                            
-                        case 20:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 30:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 40:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 50:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 60:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 70:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 80:
-                            print("\(numbers[index]) in english is \(digit.value)")
-                        case 90:
-                            print("\(numbers[index]) in english is \(digit.value)")
+                        switch num {
+                        case 10,20,30,40,50,60,70,80,90:
+                            print("\(num) in english is \(digit.value)")
+                            return digit.value
                         case 11:
-                            print("\(numbers[index]) in english is eleven")
+                            print("\(num) in english is eleven")
+                            return "eleven"
+
                         case 12:
-                            print("\(numbers[index]) in english is twelve")
+                            print("\(num) in english is twelve")
+                            return "twelve"
+
                         case 13:
-                            print("\(numbers[index]) in english is thirteen")
+                            print("\(num) in english is thirteen")
+                            return "thirteen"
+
                         case 14:
-                            print("\(numbers[index]) in english is fourteen")
+                            print("\(num) in english is fourteen")
+                            return "fourteen"
+
                         case 15:
-                            print("\(numbers[index]) in english is fifteen")
+                            print("\(num) in english is fifteen")
+                            return "fifteen"
+
                         case 16..<20:
-                            print("\(numbers[index]) in english is \(word.value)teen")
+                            print("\(num) in english is \(word.value)teen")
+                            return "\(word.value)teen"
+                        case 69:
+                            print("\(num) in english is \(digit.value) \(word.value)")
+                            return "nice"
+
                         default:
-                            print("\(numbers[index]) in english is \(digit.value) \(word.value)")
+                            print("\(num) in english is \(digit.value) \(word.value)")
+                            return digit.value == "" ? "\(word.value)" : "\(digit.value) \(word.value)"
+
                         }
-                        
-                        /*if numbers[index] == 10 || numbers[index] == 20 || numbers[index] == 30 || numbers[index] == 40 || numbers[index] == 50 || numbers[index] == 60 || numbers[index] == 70 || numbers[index] == 80 || numbers[index] == 90 {
-                         print("\(numbers[index]) in english is \(digit.value)")
-                         }else{
-                         print("\(numbers[index]) in english is: \(digit.value) \(word.value) ")
-                         
-                         }*/
                     }
                 }
             }
-            /*else{
-             if(numbers[index] >= 20 && numbers[index] <= 29){
-             print(numbers[index])
-             }
-             
-             }
-             }*/
-            
-            // }
         }
         index += 1
     }
-    
+    return ""
+}
+func englishWordsOfValues(_ numbers: [Int]) {
+
+    let engNum = numbers.map { (num: Int) ->String in
+        return getEnglishRep(num: num)
+    }
+    print(engNum)
+
 }
